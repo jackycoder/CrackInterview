@@ -29,7 +29,11 @@ void PrintLinklist(Node *head);
  * Answer1: Create 2 linked_list to store 
  *          greater and less than data
  */
-void Partition(Node *linked_list, int data);
+Node* Partition(Node *linked_list, int data);
 
+/*
+ * Description: Merge 2 linked_lists
+ */
+Node * MergeLinklist(Node *front_list , Node *behind_list);
 
 #endif
