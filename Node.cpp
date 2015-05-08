@@ -35,6 +35,11 @@ Node* Node::deleteNode(Node *head ,int d)
 	return head;
 }
 
+void Node::set_data(int a)
+{
+	data = a;
+}
+
 Node::~Node(void)
 {
 }

@@ -14,8 +14,10 @@ public:
 	Node *next;
 	int data;
 public:
+	Node(void){}
 	Node(int d);
 	~Node(void);
 	void appendToTail(int d);
 	Node* deleteNode(Node *head,int d);
+	void set_data(int);
 };
