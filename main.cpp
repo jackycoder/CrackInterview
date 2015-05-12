@@ -26,16 +26,14 @@ int main()
 	//PrintLinklist(Partition(linklist,5));
 
 	Stack *my_stack = new Stack;
-	for(size_t i = 0;i<100;i++)
-	{
-		my_stack->push(i);
-	}	
-
 	for(size_t i = 0;i<10;i++)
 	{
-		my_stack->pop();
+		my_stack->push(i);
 	}
-	cout << my_stack->get_length() << endl;
+	for(size_t i = 0;i<11;i++)
+	{
+		cout << my_stack->pop() << " ";
+	}
 
 	system("pause");
 }

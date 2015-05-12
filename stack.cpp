@@ -3,6 +3,7 @@
 Stack::Stack(void)
 {
 	m_length = 0;
+	m_top = NULL;
 }
 
 int Stack::pop()
@@ -11,8 +12,10 @@ int Stack::pop()
 	{
 		m_top = m_top->next;		
 		m_length--;
-		return m_top->data;
+		if(m_top != NULL)
+			return m_top->data;
 	}
+	cout << "Stack is empty now!" << endl;
 	return NULL;
 }
 
